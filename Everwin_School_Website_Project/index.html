@@ -1,0 +1,2280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Everwin Group of Schools - Premier Educational Institution in Chennai offering CBSE & Matriculation curriculum with state-of-the-art infrastructure and holistic development.">
+    <meta name="keywords" content="Everwin School, Best School in Chennai, CBSE Schools Kolathur, Matriculation School Chennai, Everwin Group of Schools">
+    <title>Everwin Group of Schools | Empowering Minds, Shaping Leaders</title>
+    <link rel="icon" href="images/06_Brand/everwin_surapet_logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ==========================================
+           1. CORE STYLES & RESET
+           ========================================== */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg-white: #ffffff;
+            --bg-slate: #f8fafc;
+            --bg-navy: #0a192f;
+            --navy-dark: #0f172a;
+            --navy-light: #1e293b;
+            --royal-blue: #1e40af;
+            --royal-blue-hover: #1d4ed8;
+            --accent-blue: #2563eb;
+            --gold-primary: #d97706;
+            --gold-light: #f59e0b;
+            --gold-accent: #fbbf24;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --text-light: #f1f5f9;
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-glow: 0 0 25px rgba(37, 99, 235, 0.25);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --radius-full: 9999px;
+            --transition-fast: 0.2s ease;
+            --transition-normal: 0.3s ease;
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.25;
+            color: var(--navy-dark);
+        }
+
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-fast);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Container utility */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section-padding {
+            padding: 5rem 0;
+        }
+
+        .bg-pattern {
+            background-color: var(--bg-slate);
+            background-image: radial-gradient(rgba(30, 64, 175, 0.04) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .bg-navy-pattern {
+            background-color: var(--bg-navy);
+            background-image: radial-gradient(rgba(245, 158, 11, 0.1) 1px, transparent 1px);
+            background-size: 32px 32px;
+            color: var(--text-light);
+        }
+
+        /* Section Header Component */
+        .section-header {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 3.5rem auto;
+        }
+
+        .section-badge {
+            display: inline-block;
+            padding: 0.35rem 1rem;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--accent-blue);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border-radius: var(--radius-full);
+            margin-bottom: 0.75rem;
+        }
+
+        .section-badge.gold {
+            background: rgba(217, 119, 6, 0.15);
+            color: var(--gold-primary);
+        }
+
+        .section-title {
+            font-size: 2.25rem;
+            margin-bottom: 1rem;
+            color: var(--navy-dark);
+        }
+
+        .bg-navy-pattern .section-title {
+            color: var(--bg-white);
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+        }
+
+        .bg-navy-pattern .section-subtitle {
+            color: #94a3b8;
+        }
+
+        /* Button Utilities */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.75rem;
+            font-weight: 600;
+            font-size: 0.95rem;
+            border-radius: var(--radius-full);
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--royal-blue), var(--accent-blue));
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+            background: linear-gradient(135deg, var(--royal-blue-hover), var(--royal-blue));
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+            color: white;
+        }
+
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border-color: rgba(255, 255, 255, 0.4);
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: white;
+        }
+
+        .btn-outline-navy {
+            background: transparent;
+            border-color: var(--royal-blue);
+            color: var(--royal-blue);
+        }
+
+        .btn-outline-navy:hover {
+            background: var(--royal-blue);
+            color: white;
+        }
+
+        /* Hidden Checkbox Triggers */
+        .toggle-checkbox {
+            display: none;
+        }
+
+        /* ==========================================
+           2. HEADER & STICKY NAVIGATION
+           ========================================== */
+        /* Top Banner */
+        .top-bar {
+            background: var(--navy-dark);
+            color: #94a3b8;
+            font-size: 0.85rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-info {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .top-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .top-links {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+        }
+
+        .top-links a:hover {
+            color: var(--gold-light);
+        }
+
+        /* Main Header */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: var(--glass-bg);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--navy-dark), var(--royal-blue));
+            border: 2px solid var(--gold-accent);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold-accent);
+            font-size: 1.4rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .logo-text h1 {
+            font-size: 1.25rem;
+            color: var(--bg-navy);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .logo-text span {
+            font-size: 0.72rem;
+            color: var(--gold-primary);
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            display: block;
+            text-transform: uppercase;
+        }
+
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 1.5rem 0;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: var(--navy-light);
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .nav-link:hover, .nav-item:hover > .nav-link {
+            color: var(--accent-blue);
+        }
+
+        /* Mega Dropdowns */
+        .mega-dropdown, .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%) translateY(10px);
+            background: var(--bg-white);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            padding: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-normal);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .dropdown-menu {
+            min-width: 220px;
+            left: 0;
+            transform: translateY(10px);
+        }
+
+        .mega-dropdown {
+            width: 650px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .nav-item:hover .mega-dropdown,
+        .nav-item:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: all;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            padding: 0.6rem 0.8rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .dropdown-item:hover {
+            background: var(--bg-slate);
+        }
+
+        .dropdown-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(37, 99, 235, 0.1);
+            color: var(--accent-blue);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        .dropdown-text strong {
+            display: block;
+            font-size: 0.88rem;
+            color: var(--navy-dark);
+        }
+
+        .dropdown-text small {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Hamburger Toggle Button */
+        .hamburger-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .hamburger-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--navy-dark);
+            border-radius: 3px;
+            transition: var(--transition-normal);
+        }
+
+        /* ==========================================
+           3. HERO SECTION (PURE CSS CAROUSEL)
+           ========================================== */
+        .hero-section {
+            position: relative;
+            height: calc(100vh - 120px);
+            min-height: 600px;
+            max-height: 800px;
+            background: var(--navy-dark);
+            overflow: hidden;
+        }
+
+        .hero-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300%;
+            height: 100%;
+            display: flex;
+            animation: heroSlideAnimation 18s infinite cubic-bezier(0.77, 0, 0.175, 1);
+        }
+
+        @keyframes heroSlideAnimation {
+            0%, 28% { transform: translateX(0); }
+            33%, 61% { transform: translateX(-33.333%); }
+            66%, 94% { transform: translateX(-66.666%); }
+            100% { transform: translateX(0); }
+        }
+
+        .hero-slide {
+            width: 33.333%;
+            height: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-slide-1 {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.75), rgba(15, 23, 42, 0.85)), url('images/09_Sembium/sembium_building.jpg');
+        }
+
+        .hero-slide-2 {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.75), rgba(15, 23, 42, 0.85)), url('images/02_Mathur/mathur_gate_01.jpg');
+        }
+
+        .hero-slide-3 {
+            background-image: linear-gradient(rgba(10, 25, 47, 0.75), rgba(15, 23, 42, 0.85)), url('images/02_Mathur/mathur_building_02.jpg');
+        }
+
+        .hero-content {
+            max-width: 750px;
+            color: white;
+            z-index: 2;
+        }
+
+        .hero-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 1.25rem;
+            background: rgba(217, 119, 6, 0.2);
+            border: 1px solid var(--gold-accent);
+            color: var(--gold-accent);
+            border-radius: var(--radius-full);
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 1.25rem;
+            text-transform: uppercase;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.15;
+            color: white;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .scroll-down-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 5;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+
+        /* Announcement Ticker Bar */
+        .ticker-bar {
+            background: var(--royal-blue);
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 48px;
+            overflow: hidden;
+        }
+
+        .ticker-label {
+            background: var(--gold-primary);
+            color: white;
+            font-weight: 800;
+            padding: 0 1.5rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            z-index: 2;
+        }
+
+        .ticker-content {
+            white-space: nowrap;
+            animation: ticker 30s linear infinite;
+            padding-left: 100%;
+        }
+
+        @keyframes ticker {
+            0% { transform: translate3d(0, 0, 0); }
+            100% { transform: translate3d(-100%, 0, 0); }
+        }
+
+        .ticker-item {
+            display: inline-block;
+            padding: 0 2rem;
+            font-size: 0.9rem;
+        }
+
+        .ticker-item a {
+            color: var(--gold-accent);
+            text-decoration: underline;
+        }
+
+        /* ==========================================
+           4. MODAL POP-UPS (PURE CSS :checked)
+           ========================================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(8px);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-normal);
+            padding: 1.5rem;
+        }
+
+        .modal-box {
+            background: white;
+            border-radius: var(--radius-lg);
+            width: 100%;
+            max-width: 550px;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.9);
+            transition: var(--transition-normal);
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            width: 36px;
+            height: 36px;
+            background: var(--bg-slate);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            transition: var(--transition-fast);
+        }
+
+        .modal-close:hover {
+            background: #e2e8f0;
+            color: var(--navy-dark);
+        }
+
+        /* Display Modals when Checkbox is Checked */
+        #admission-modal-toggle:checked ~ #admission-modal,
+        #welcome-modal-toggle:checked ~ #welcome-modal,
+        #lightbox-1-toggle:checked ~ #lightbox-1 {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #admission-modal-toggle:checked ~ #admission-modal .modal-box,
+        #welcome-modal-toggle:checked ~ #welcome-modal .modal-box,
+        #lightbox-1-toggle:checked ~ #lightbox-1 .modal-box {
+            transform: scale(1);
+        }
+
+        /* Form Styles inside Modals */
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+            color: var(--navy-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #cbd5e1;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+
+        /* ==========================================
+           5. SECTION 2 & 3: ABOUT & FOUNDER
+           ========================================== */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3.5rem;
+            align-items: center;
+        }
+
+        .about-image-wrapper {
+            position: relative;
+        }
+
+        .main-img {
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .floating-experience-card {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            background: var(--navy-dark);
+            color: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            border: 2px solid var(--gold-primary);
+            text-align: center;
+        }
+
+        .experience-num {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gold-accent);
+            line-height: 1;
+        }
+
+        .founder-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid rgba(0,0,0,0.05);
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .founder-avatar {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 4px solid var(--gold-accent);
+        }
+
+        .founder-quote {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--navy-light);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        /* ==========================================
+           6. SECTION 4 & 5: VISION, MISSION & PHILOSOPHY
+           ========================================== */
+        .tabs-container {
+            margin-top: 2rem;
+        }
+
+        .tab-radios {
+            display: none;
+        }
+
+        .tab-nav {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .tab-btn {
+            padding: 0.8rem 2rem;
+            border-radius: var(--radius-full);
+            background: var(--bg-slate);
+            color: var(--navy-dark);
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            border: 1px solid #e2e8f0;
+        }
+
+        #tab-vision:checked ~ .tab-nav label[for="tab-vision"],
+        #tab-mission:checked ~ .tab-nav label[for="tab-mission"],
+        #tab-values:checked ~ .tab-nav label[for="tab-values"] {
+            background: var(--royal-blue);
+            color: white;
+            border-color: var(--royal-blue);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .tab-content {
+            display: none;
+            background: white;
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+        }
+
+        #tab-vision:checked ~ .tab-contents #content-vision,
+        #tab-mission:checked ~ .tab-contents #content-mission,
+        #tab-values:checked ~ .tab-contents #content-values {
+            display: block;
+        }
+
+        /* ==========================================
+           7. SECTION 6, 7 & 8: ACADEMICS & STATS
+           ========================================== */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-md);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: var(--transition-normal);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--gold-accent);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--gold-accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ==========================================
+           8. SECTION 9-15: INFRASTRUCTURE & FACILITIES
+           ========================================== */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .facility-card {
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+            transition: var(--transition-normal);
+        }
+
+        .facility-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .facility-img {
+            height: 220px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .facility-body {
+            padding: 1.5rem;
+        }
+
+        .facility-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .facility-title i {
+            color: var(--accent-blue);
+        }
+
+        /* ==========================================
+           9. SECTION 16: CAMPUS EXPLORER
+           ========================================== */
+        .campus-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .campus-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #e2e8f0;
+            transition: var(--transition-normal);
+            position: relative;
+        }
+
+        .campus-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .campus-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--navy-dark);
+            color: var(--gold-accent);
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius-full);
+            z-index: 2;
+        }
+
+        .campus-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .campus-content {
+            padding: 1.5rem;
+        }
+
+        .campus-name {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .campus-location {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* ==========================================
+           10. SECTION 20: INTERACTIVE PHOTO GALLERY
+           ========================================== */
+        .gallery-nav {
+            display: flex;
+            justify-content: center;
+            gap: 0.75rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.25rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            height: 240px;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-slow);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.85), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.25rem;
+            color: white;
+            opacity: 0;
+            transition: var(--transition-normal);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        /* Pure CSS Gallery Filtering */
+        #gal-all:checked ~ .gallery-grid .gallery-item { display: block; }
+        
+        #gal-academics:checked ~ .gallery-grid .gallery-item:not(.cat-academics) { display: none; }
+        #gal-sports:checked ~ .gallery-grid .gallery-item:not(.cat-sports) { display: none; }
+        #gal-cultural:checked ~ .gallery-grid .gallery-item:not(.cat-cultural) { display: none; }
+        #gal-infrastructure:checked ~ .gallery-grid .gallery-item:not(.cat-infrastructure) { display: none; }
+
+        #gal-all:checked ~ .gallery-nav label[for="gal-all"],
+        #gal-academics:checked ~ .gallery-nav label[for="gal-academics"],
+        #gal-sports:checked ~ .gallery-nav label[for="gal-sports"],
+        #gal-cultural:checked ~ .gallery-nav label[for="gal-cultural"],
+        #gal-infrastructure:checked ~ .gallery-nav label[for="gal-infrastructure"] {
+            background: var(--royal-blue);
+            color: white;
+        }
+
+        /* ==========================================
+           11. SECTION 25: FAQ ACCORDION (PURE CSS)
+           ========================================== */
+        .faq-accordion {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        details {
+            background: white;
+            border-radius: var(--radius-md);
+            border: 1px solid #e2e8f0;
+            padding: 1.25rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-fast);
+        }
+
+        details[open] {
+            border-color: var(--accent-blue);
+            box-shadow: var(--shadow-md);
+        }
+
+        summary {
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--navy-dark);
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            font-size: 0.9rem;
+            color: var(--accent-blue);
+            transition: var(--transition-fast);
+        }
+
+        details[open] summary::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            margin-top: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            border-top: 1px solid #f1f5f9;
+            padding-top: 0.75rem;
+        }
+
+        /* ==========================================
+           12. FOOTER & BACK TO TOP
+           ========================================== */
+        footer {
+            background: var(--navy-dark);
+            color: #94a3b8;
+            padding-top: 4rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            margin-bottom: 3.5rem;
+        }
+
+        .footer-logo h2 {
+            color: white;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-logo p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer-title {
+            color: white;
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 35px;
+            height: 2px;
+            background: var(--gold-accent);
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-accent);
+            padding-left: 5px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 48px;
+            height: 48px;
+            background: var(--royal-blue);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            z-index: 99;
+            transition: var(--transition-fast);
+        }
+
+        .back-to-top:hover {
+            background: var(--gold-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ==========================================
+           13. RESPONSIVE BREAKPOINTS
+           ========================================== */
+        @media (max-width: 1024px) {
+            .grid-3, .campus-grid, .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .mega-dropdown {
+                width: 100%;
+                left: 0;
+                transform: none;
+            }
+            .founder-card {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger-btn {
+                display: flex;
+            }
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 2rem;
+                overflow-y: auto;
+                transition: var(--transition-normal);
+            }
+            #mobile-menu-toggle:checked ~ header .nav-menu {
+                left: 0;
+            }
+            .hero-title {
+                font-size: 2.25rem;
+            }
+            .grid-2, .grid-3, .campus-grid, .stats-grid, .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .top-bar-content {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    
+        /* Campus contact cards and embedded maps */
+        .campus-contact-section { position: relative; }
+        .campus-contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1.5rem;
+            align-items: stretch;
+        }
+        .campus-contact-card {
+            min-width: 0;
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            box-shadow: 0 12px 35px rgba(15, 23, 42, .08);
+            padding: 1.5rem;
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+        .campus-contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 42px rgba(30, 64, 175, .13);
+        }
+        .campus-card-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .75rem;
+            margin-bottom: 1rem;
+        }
+        .campus-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 13px;
+            color: #fff;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+        }
+        .campus-hours {
+            color: #64748b;
+            font-size: .78rem;
+            font-weight: 700;
+            text-align: right;
+        }
+        .campus-contact-card h3 {
+            color: #0f172a;
+            font-size: 1.18rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+        .campus-detail {
+            display: flex;
+            align-items: flex-start;
+            gap: .75rem;
+            margin: .75rem 0;
+            color: #475569;
+            font-size: .9rem;
+            line-height: 1.65;
+            overflow-wrap: anywhere;
+        }
+        .campus-detail > i {
+            width: 18px;
+            flex: 0 0 18px;
+            margin-top: .2rem;
+            color: #2563eb;
+            text-align: center;
+        }
+        .campus-detail a {
+            color: #1d4ed8;
+            text-decoration: none;
+        }
+        .campus-detail a:hover { text-decoration: underline; }
+        .campus-map-wrap {
+            margin-top: 1.25rem;
+            overflow: hidden;
+            border-radius: 14px;
+            border: 1px solid #dbeafe;
+            background: #eff6ff;
+        }
+        .campus-map-wrap iframe {
+            display: block;
+            width: 100%;
+            height: 245px;
+            border: 0;
+        }
+        .campus-directions {
+            display: inline-flex;
+            align-items: center;
+            gap: .55rem;
+            margin-top: 1rem;
+            padding: .72rem 1rem;
+            border-radius: 999px;
+            color: #fff;
+            background: linear-gradient(135deg, #1e40af, #2563eb);
+            font-size: .86rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: filter .2s ease, transform .2s ease;
+        }
+        .campus-directions:hover { filter: brightness(1.08); transform: translateY(-1px); }
+        @media (max-width: 760px) {
+            .campus-contact-grid { grid-template-columns: 1fr; }
+            .campus-contact-card { padding: 1.15rem; }
+            .campus-map-wrap iframe { height: 225px; }
+        }
+
+</style>
+    <link rel="icon" type="image/png" href="images/06_Brand/everwin_surapet_logo.png">
+</head>
+<body>
+
+    <!-- Checkbox State Toggles for Pure CSS Modals & Mobile Menu -->
+    <input type="checkbox" id="mobile-menu-toggle" class="toggle-checkbox">
+    <input type="checkbox" id="admission-modal-toggle" class="toggle-checkbox">
+    <input type="checkbox" id="welcome-modal-toggle" class="toggle-checkbox" checked>
+    <input type="checkbox" id="lightbox-1-toggle" class="toggle-checkbox">
+
+    <!-- TOP UTILITY BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-info">
+                <span><i class="fa-solid fa-phone text-gold"></i> +91 44 2651 2222</span>
+                <span><i class="fa-solid fa-envelope text-gold"></i> info@everwinschool.com</span>
+                <span><i class="fa-solid fa-location-dot text-gold"></i> Chennai, Tamil Nadu</span>
+            </div>
+            <div class="top-links">
+                <a href="#admissions"><i class="fa-solid fa-user-graduate"></i> Online Admissions</a>
+                <a href="#contact"><i class="fa-solid fa-headset"></i> Support</a>
+                <label for="admission-modal-toggle" class="btn btn-gold" style="padding: 0.25rem 0.8rem; font-size: 0.75rem; cursor: pointer;">
+                    Enquire Now
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- STICKY GLASS NAVIGATION BAR -->
+    <header>
+        <div class="container nav-container">
+            <!-- School Brand Logo -->
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">
+                    <img loading="lazy" decoding="async" src="images/06_Brand/everwin_surapet_logo.png" alt="Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Everwin</h1>
+                    <span>Group of Schools</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#about" class="nav-link">About Us <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#about" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-school"></i></div>
+                            <div class="dropdown-text"><strong>Our History</strong><small>30+ Years of Legacy</small></div>
+                        </a>
+                        <a href="#founder" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-user-tie"></i></div>
+                            <div class="dropdown-text"><strong>Founder's Desk</strong><small>Visionary Leadership</small></div>
+                        </a>
+                        <a href="#vision" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-compass"></i></div>
+                            <div class="dropdown-text"><strong>Vision & Mission</strong><small>Our Core Purpose</small></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#academics" class="nav-link">Academics <i class="fa-solid fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+                    <div class="mega-dropdown">
+                        <a href="#academics" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-book-open"></i></div>
+                            <div class="dropdown-text"><strong>CBSE Curriculum</strong><small>National Education Framework</small></div>
+                        </a>
+                        <a href="#academics" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-award"></i></div>
+                            <div class="dropdown-text"><strong>Matriculation Board</strong><small>Tamil Nadu State Curriculum</small></div>
+                        </a>
+                        <a href="#infrastructure" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-microscope"></i></div>
+                            <div class="dropdown-text"><strong>STEM & Robotics</strong><small>Next-Gen Practical Labs</small></div>
+                        </a>
+                        <a href="#infrastructure" class="dropdown-item">
+                            <div class="dropdown-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="dropdown-text"><strong>Smart Classrooms</strong><small>Interactive Learning Tech</small></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a href="#campuses" class="nav-link">Our Campuses</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#infrastructure" class="nav-link">Infrastructure</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#admissions" class="nav-link">Admissions</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </nav>
+
+            <!-- Action CTA & Mobile Trigger -->
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <label for="admission-modal-toggle" class="btn btn-primary" style="cursor: pointer;">
+                    <i class="fa-solid fa-paper-plane"></i> Apply Now
+                </label>
+                <label for="mobile-menu-toggle" class="hamburger-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 1: HERO SLIDER & WELCOME -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="hero-slide hero-slide-1">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag"><i class="fa-solid fa-star"></i> Excellence in Education</span>
+                        <h1 class="hero-title">Empowering Minds, Shaping Tomorrow's Leaders</h1>
+                        <p class="hero-description">Nurturing academic brilliance, ethical values, and holistic individual growth across 10 world-class campuses in Chennai.</p>
+                        <div class="hero-btns">
+                            <a href="#about" class="btn btn-gold">Discover Everwin</a>
+                            <a href="#campuses" class="btn btn-outline">Explore Our Campuses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide hero-slide-2">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag"><i class="fa-solid fa-microscope"></i> Future-Ready Learning</span>
+                        <h1 class="hero-title">World-Class Infrastructure & Digital Labs</h1>
+                        <p class="hero-description">Inspiring curious minds through state-of-the-art AI labs, robotics workshops, and interactive digital smart classrooms.</p>
+                        <div class="hero-btns">
+                            <a href="#infrastructure" class="btn btn-primary">View Facilities</a>
+                            <label for="admission-modal-toggle" class="btn btn-outline" style="cursor: pointer;">Admissions Open 2026-27</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide hero-slide-3">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-tag"><i class="fa-solid fa-trophy"></i> 30+ Years Legacy</span>
+                        <h1 class="hero-title">100% Board Pass Rate & Olympiad Champions</h1>
+                        <p class="hero-description">Consistent state rank holders and national sports champions nurtured with care and dedication.</p>
+                        <div class="hero-btns">
+                            <a href="#achievements" class="btn btn-gold">Our Achievements</a>
+                            <a href="#contact" class="btn btn-outline">Visit Campus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down-indicator">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ANNOUNCEMENT TICKER -->
+    <div class="ticker-bar">
+        <div class="ticker-label"><i class="fa-solid fa-bullhorn" style="margin-right: 0.5rem;"></i> Latest News</div>
+        <div class="ticker-content">
+            <span class="ticker-item"> Admissions Open for Academic Year 2026-27 across all CBSE & Matriculation Campuses. <a href="#admissions">Apply Online Now</a></span>
+            <span class="ticker-item"> Everwin Students Secure Top Ranks in National Science & Mathematics Olympiad 2026.</span>
+            <span class="ticker-item"> Annual Sports Meet & Cultural Fest Scheduled for Next Month. Stay Tuned!</span>
+        </div>
+    </div>
+
+    <!-- SECTION 2 & 3: ABOUT EVERWIN & FOUNDER -->
+    <section id="about" class="section-padding bg-pattern">
+        <div class="container">
+            <div class="grid-2">
+                <div class="about-image-wrapper">
+                    <img loading="lazy" decoding="async" src="https://www.everwinschool.com/images/sembium/sembium-buliding.jpg" alt="Everwin Campus Building" class="main-img">
+                    <div class="floating-experience-card">
+                        <div class="experience-num">30+</div>
+                        <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase;">Years of Educational Excellence</div>
+                    </div>
+                </div>
+                <div>
+                    <span class="section-badge">About Everwin Group</span>
+                    <h2 class="section-title">A Legacy of Inspiring Brilliance & Character</h2>
+                    <p style="margin-bottom: 1.25rem; color: var(--text-muted); font-size: 1.05rem;">
+                        Founded with a vision to make high-quality, holistic education accessible, Everwin Group of Schools has grown from a humble beginning into one of Chennai's most trusted educational institutions.
+                    </p>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                        With over 25,000 students and a dedicated faculty team, we combine rigorous academic frameworks (CBSE & State Board) with modern technological advancements and strong moral values.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-circle-check text-gold" style="font-size: 1.2rem;"></i>
+                            <strong>Holistic 360° Learning</strong>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-circle-check text-gold" style="font-size: 1.2rem;"></i>
+                            <strong>State-of-the-Art Labs</strong>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-circle-check text-gold" style="font-size: 1.2rem;"></i>
+                            <strong>Personalized Coaching</strong>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.75rem;">
+                            <i class="fa-solid fa-circle-check text-gold" style="font-size: 1.2rem;"></i>
+                            <strong>100% Academic Excellence</strong>
+                        </div>
+                    </div>
+                    <a href="#founder" class="btn btn-primary">Read Founder's Message</a>
+                </div>
+            </div>
+
+            <!-- Founder Profile Block -->
+            <div id="founder" style="margin-top: 5rem;">
+                <div class="founder-card">
+                    <div class="founder-avatar">
+                        <img loading="lazy" decoding="async" src="images/05_Management/founder_dr_b_purushothaman.jpg" alt="Founder & Senior Principal B. Purushothaman">
+                    </div>
+                    <div>
+                        <span class="section-badge gold">Leadership</span>
+                        <h3 style="font-size: 1.75rem; margin-bottom: 0.25rem;">Dr. B. Purushothaman</h3>
+                        <p style="color: var(--gold-primary); font-weight: 700; margin-bottom: 1rem;">Founder & Senior Principal</p>
+                        <p class="founder-quote">"Education is not merely the accumulation of facts, but the training of the mind to think critically, act compassionately, and lead fearlessly. At Everwin, every child's potential is recognized and carefully nurtured."</p>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">Under his visionary guidance, Everwin has consistently set benchmark standards in student discipline, academic success, innovative teaching methodologies, and character building.</p>
+                        <div style="display:flex;align-items:center;gap:1rem;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid #e2e8f0;">
+                            <img src="images/05_Management/ceo_mrs_v_mageswari.jpg" alt="Mrs. V. Mageswari, Chief Executive Officer" loading="lazy" decoding="async" style="width:76px;height:76px;object-fit:cover;border-radius:50%;border:3px solid var(--gold-accent);">
+                            <div><strong>Mrs. V. Mageswari</strong><div style="color:var(--text-muted);font-size:.9rem;">Chief Executive Officer</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 & 5: VISION, MISSION & PHILOSOPHY -->
+    <section id="vision" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Guiding Principles</span>
+                <h2 class="section-title">Vision, Mission & Educational Philosophy</h2>
+                <p class="section-subtitle">Our commitment to nurturing tomorrow's global leaders through balanced and value-based education.</p>
+            </div>
+
+            <!-- Pure CSS Tabs -->
+            <div class="tabs-container">
+                <input type="radio" id="tab-vision" name="tabs" class="tab-radios" checked>
+                <input type="radio" id="tab-mission" name="tabs" class="tab-radios">
+                <input type="radio" id="tab-values" name="tabs" class="tab-radios">
+
+                <div class="tab-nav">
+                    <label for="tab-vision" class="tab-btn"><i class="fa-solid fa-eye"></i> Our Vision</label>
+                    <label for="tab-mission" class="tab-btn"><i class="fa-solid fa-bullseye"></i> Our Mission</label>
+                    <label for="tab-values" class="tab-btn"><i class="fa-solid fa-heart"></i> Core Values</label>
+                </div>
+
+                <div class="tab-contents">
+                    <div id="content-vision" class="tab-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--royal-blue);"><i class="fa-solid fa-lightbulb"></i> Inspiring Excellence Worldwide</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.8;">
+                            To be a premier educational institution recognized globally for academic rigor, innovation, and character development, preparing students to confidently navigate and lead in a rapidly changing world.
+                        </p>
+                    </div>
+                    <div id="content-mission" class="tab-content">
+                        <h3 style="margin-bottom: 1rem; color: var(--royal-blue);"><i class="fa-solid fa-rocket"></i> Empowering Every Student</h3>
+                        <p style="font-size: 1.05rem; color: var(--text-muted); line-height: 1.8;">
+                            To provide an inclusive, safe, and technologically enriched learning environment that fosters critical thinking, creativity, physical fitness, and moral integrity through dedicated teaching and community engagement.
+                        </p>
+                    </div>
+                    <div id="content-values" class="tab-content">
+                        <div class="grid-3">
+                            <div style="text-align: center; padding: 1rem;">
+                                <i class="fa-solid fa-shield-halved" style="font-size: 2.5rem; color: var(--gold-primary); margin-bottom: 1rem;"></i>
+                                <h4>Integrity & Ethics</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Instilling honesty, responsibility, and moral courage in every action.</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <i class="fa-solid fa-brain" style="font-size: 2.5rem; color: var(--accent-blue); margin-bottom: 1rem;"></i>
+                                <h4>Academic Curiosity</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Encouraging lifelong learning and intellectual exploration.</p>
+                            </div>
+                            <div style="text-align: center; padding: 1rem;">
+                                <i class="fa-solid fa-hand-holding-heart" style="font-size: 2.5rem; color: var(--royal-blue); margin-bottom: 1rem;"></i>
+                                <h4>Empathy & Respect</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem;">Fostering a caring community built on mutual respect and empathy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: SCHOOL KEY STATISTICS -->
+    <section class="section-padding bg-navy-pattern">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Modern Campuses</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">25,000+</div>
+                    <div class="stat-label">Active Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Board Pass Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Years of Legacy</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9-15: INFRASTRUCTURE & FACILITIES -->
+    <section id="infrastructure" class="section-padding bg-pattern">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">World-Class Facilities</span>
+                <h2 class="section-title">Infrastructure Designed for Growth</h2>
+                <p class="section-subtitle">Empowering learning through modern technology, safe environments, and comprehensive athletic facilities.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_smart_class_10.jpg" alt="Smart Classroom" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-chalkboard-user"></i> Smart Classrooms</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">Interactive digital smart boards and high-speed visual learning tools in every classroom.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_computer_lab_06.jpg" alt="Kolathur computer laboratory" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-flask"></i> Science & Robotics Labs</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">Fully-equipped Physics, Chemistry, Biology, and Advanced Robotics/AI laboratories.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="https://images.jdmagicbox.com/v2/comp/chennai/57/044pf005557/catalogue/velammal-matriculation-higher-secondary-school-pozhal-chennai-schools-3onzr99-250.jpg" alt="Library" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-book-bookmark"></i> Central Library</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">Over 50,000 books, journals, digital archives, and quiet reading zones for students.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_cricket_05.jpg" alt="Students participating in cricket at Kolathur CBSE" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-futbol"></i> Sports Arena</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">Cricket pitches, football grounds, basketball courts, and professional athletic tracks.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="images/07_Awards/award_screen_1.jpg" alt="Everwin school award and recognition photograph" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-palette"></i> Fine Arts & Music Studios</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">Dedicated creative spaces for music, classical dance, painting, and theatrical arts.</p>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_class_activity_07.jpg" alt="Kolathur classroom activity" class="facility-img">
+                    <div class="facility-body">
+                        <h3 class="facility-title"><i class="fa-solid fa-desktop"></i> Next-Gen Computer Center</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem;">High-performance systems for coding, web development, and digital literacy training.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 16: INTERACTIVE CAMPUS EXPLORER -->
+    <section id="campuses" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge gold">Our Network</span>
+                <h2 class="section-title">Explore Everwin Campuses</h2>
+                <p class="section-subtitle">Conveniently located campuses across Chennai delivering CBSE & State Board Curricula.</p>
+            </div>
+
+            <div class="campus-grid">
+                <!-- Campus 1 -->
+                <div class="campus-card">
+                    <span class="campus-badge">Matriculation</span>
+                    <img loading="lazy" decoding="async" src="https://everwinschool.com/images/EMK/matric.jpg" alt="Everwin official logo — Kolathur Matriculation campus photo to be added" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">Matriculation – Kolathur</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Kolathur, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">The flagship campus known for exceptional state-level board exam results and holistic training.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+                <!-- Campus 2 -->
+                <div class="campus-card">
+                    <span class="campus-badge">CBSE</span>
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_campus_01.jpg" alt="Everwin official logo — Kolathur CBSE campus photo to be added" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">CBSE – Kolathur</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Kolathur, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">State-of-the-art CBSE curriculum campus featuring advanced STEM learning tools.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+                <!-- Campus 3 -->
+                <div class="campus-card">
+                    <span class="campus-badge">CBSE</span>
+                    <img loading="lazy" decoding="async" src="https://everwinschool.com/img/school/maduravayal/maduravayal3.jpg" alt="Everwin official logo — Maduravoyal CBSE campus photo to be added" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">CBSE – Maduravoyal</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Maduravoyal, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Spacious modern campus with expansive sports facilities and digital labs.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+                <!-- Campus 4 -->
+                <div class="campus-card">
+                    <span class="campus-badge">CBSE</span>
+                    <img loading="lazy" decoding="async" src="images/02_Mathur/mathur_gate_01.jpg" alt="Mathur CBSE" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">CBSE – Mathur</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Mathur, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Dedicated faculty nurturing future leaders with individualized student care.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+                <!-- Campus 5 -->
+                <div class="campus-card">
+                    <span class="campus-badge">CBSE</span>
+                    <img loading="lazy" decoding="async" src="https://content3.jdmagicbox.com/v2/comp/chennai/n4/044pxx44.xx44.180326143953.g3n4/catalogue/everwin-vidhyashram-perambur-chennai-schools-AiaHHLB7v1.jpg" alt="Everwin official logo — Perambur CBSE campus photo to be added" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">CBSE – Perambur</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Perambur, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Prime educational hub featuring modern smart classrooms and cultural studios.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+                <!-- Campus 6 -->
+                <div class="campus-card">
+                    <span class="campus-badge">CBSE</span>
+                    <img loading="lazy" decoding="async" src="images/04_Surapet/surapet_entrance.jpg" alt="Everwin official logo — Surapet CBSE campus photo to be added" class="campus-img">
+                    <div class="campus-content">
+                        <h3 class="campus-name">CBSE – Surapet</h3>
+                        <div class="campus-location"><i class="fa-solid fa-location-dot"></i> Surapet, Chennai</div>
+                        <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">Serene green campus focused on eco-friendly learning and sports training.</p>
+                        <a href="#contact" class="btn btn-outline-navy" style="width: 100%; font-size: 0.85rem;">Campus Info & Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 17: ADMISSIONS EXPERIENCE -->
+    <section id="admissions" class="section-padding bg-navy-pattern">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <span class="section-badge gold">Join Everwin</span>
+                    <h2 class="section-title" style="color: white;">Simple & Transparent Admission Process</h2>
+                    <p style="color: #cbd5e1; margin-bottom: 2rem;">We welcome students from all backgrounds into a warm, encouraging, and academically enriching environment.</p>
+
+                    <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; gap: 1.25rem;">
+                            <div style="width: 45px; height: 45px; background: var(--gold-primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; flex-shrink: 0;">1</div>
+                            <div>
+                                <h4 style="color: white; margin-bottom: 0.2rem;">Submit Online Enquiry</h4>
+                                <p style="color: #94a3b8; font-size: 0.9rem;">Fill out our quick enquiry form or visit your nearest Everwin campus desk.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1.25rem;">
+                            <div style="width: 45px; height: 45px; background: var(--royal-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; flex-shrink: 0;">2</div>
+                            <div>
+                                <h4 style="color: white; margin-bottom: 0.2rem;">Campus Interaction & Counseling</h4>
+                                <p style="color: #94a3b8; font-size: 0.9rem;">Meet our friendly academic counselors and tour the school facilities.</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1.25rem;">
+                            <div style="width: 45px; height: 45px; background: var(--accent-blue); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; flex-shrink: 0;">3</div>
+                            <div>
+                                <h4 style="color: white; margin-bottom: 0.2rem;">Enrollment Confirmation</h4>
+                                <p style="color: #94a3b8; font-size: 0.9rem;">Complete document verification and secure your child's admission seat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Embedded Admission Box -->
+                <div style="background: white; border-radius: var(--radius-lg); padding: 2.5rem; color: var(--navy-dark); box-shadow: var(--shadow-lg);">
+                    <h3 style="margin-bottom: 0.5rem; font-size: 1.5rem;">Quick Admission Enquiry</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Fill in your details below and our academic admissions team will reach out promptly.</p>
+
+                    <form action="#" method="get">
+                        <div class="form-group">
+                            <label class="form-label">Parent's Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Preferred Campus</label>
+                            <select class="form-control" required>
+                                <option value="">Select Campus</option>
+                                <option value="kolathur-mat">Matriculation – Kolathur</option>
+                                <option value="kolathur-cbse">CBSE – Kolathur</option>
+                                <option value="maduravoyal">CBSE – Maduravoyal</option>
+                                <option value="mathur">CBSE – Mathur</option>
+                                <option value="perambur">CBSE – Perambur</option>
+                                <option value="surapet">CBSE – Surapet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Grade / Class Seeking</label>
+                            <select class="form-control" required>
+                                <option value="">Select Grade</option>
+                                <option value="kg">Kindergarten / Global Kids</option>
+                                <option value="primary">Primary (Class I - V)</option>
+                                <option value="middle">Middle School (Class VI - VIII)</option>
+                                <option value="high">High School (Class IX - XII)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 1rem;">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 20: INTERACTIVE PHOTO GALLERY -->
+    <section id="gallery" class="section-padding bg-pattern">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Campus Life</span>
+                <h2 class="section-title">Interactive Photo Gallery</h2>
+                <p class="section-subtitle">Glimpses of academic life, sports events, cultural celebrations, and student activities.</p>
+            </div>
+
+            <!-- Pure CSS Filter Radio Controls -->
+            <input type="radio" id="gal-all" name="gal-filter" class="toggle-checkbox" checked>
+            <input type="radio" id="gal-academics" name="gal-filter" class="toggle-checkbox">
+            <input type="radio" id="gal-sports" name="gal-filter" class="toggle-checkbox">
+            <input type="radio" id="gal-cultural" name="gal-filter" class="toggle-checkbox">
+            <input type="radio" id="gal-infrastructure" name="gal-filter" class="toggle-checkbox">
+
+            <div class="gallery-nav">
+                <label for="gal-all" class="tab-btn">All Photos</label>
+                <label for="gal-academics" class="tab-btn">Academics</label>
+                <label for="gal-sports" class="tab-btn">Sports</label>
+                <label for="gal-cultural" class="tab-btn">Cultural</label>
+                <label for="gal-infrastructure" class="tab-btn">Infrastructure</label>
+            </div>
+
+            <div class="gallery-grid">
+                <label for="lightbox-1-toggle" class="gallery-item cat-academics">
+                    <img loading="lazy" decoding="async" src="images/01_Kolathur_CBSE/kolathur_classroom_09.jpg" alt="Kolathur classroom">
+                    <div class="gallery-overlay">
+                        <strong style="font-size: 1.1rem;">Interactive Learning</strong>
+                        <span style="font-size: 0.8rem; color: var(--gold-accent);">Academics</span>
+                    </div>
+                </label>
+                <div class="gallery-item cat-sports">
+                    <img loading="lazy" decoding="async" src="images/03_Janakipuram/janakipuram_inauguration.jpg" alt="Everwin campus photograph">
+                    <div class="gallery-overlay">
+                        <strong style="font-size: 1.1rem;">Annual Sports Meet</strong>
+                        <span style="font-size: 0.8rem; color: var(--gold-accent);">Sports</span>
+                    </div>
+                </div>
+                <div class="gallery-item cat-cultural">
+                    <img loading="lazy" decoding="async" src="images/07_Awards/award_screen_2.jpg" alt="Everwin school recognition photograph">
+                    <div class="gallery-overlay">
+                        <strong style="font-size: 1.1rem;">Cultural Fest Performance</strong>
+                        <span style="font-size: 0.8rem; color: var(--gold-accent);">Cultural</span>
+                    </div>
+                </div>
+                <div class="gallery-item cat-infrastructure">
+                    <img loading="lazy" decoding="async" src="images/04_Surapet/surapet_admission_gate.jpg" alt="Everwin campus photograph">
+                    <div class="gallery-overlay">
+                        <strong style="font-size: 1.1rem;">Robotics & AI Workshop</strong>
+                        <span style="font-size: 0.8rem; color: var(--gold-accent);">Infrastructure</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 25: FREQUENTLY ASKED QUESTIONS -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge gold">Help & Info</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Find quick answers to common questions about admissions, curricula, and campus life.</p>
+            </div>
+
+            <div class="faq-accordion">
+                <details>
+                    <summary>What boards of education are offered at Everwin Group of Schools?</summary>
+                    <div class="faq-answer">
+                        Everwin offers both CBSE (Central Board of Secondary Education) and Tamil Nadu State Board (Matriculation) curricula across our different campus branches in Chennai.
+                    </div>
+                </details>
+                <details>
+                    <summary>How can I schedule a campus visit or counseling session?</summary>
+                    <div class="faq-answer">
+                        You can fill out our online admission enquiry form on this website or call our centralized admission helpline at +91 44 2651 2222 to schedule a guided campus tour.
+                    </div>
+                </details>
+                <details>
+                    <summary>Does Everwin provide safe school bus transportation?</summary>
+                    <div class="faq-answer">
+                        Yes, Everwin operates a comprehensive fleet of modern GPS-tracked school buses covering key pickup routes across Chennai with dedicated female attendants on board.
+                    </div>
+                </details>
+                <details>
+                    <summary>What co-curricular and sports facilities are available?</summary>
+                    <div class="faq-answer">
+                        We offer professional coaching in cricket, football, basketball, skating, athletics, martial arts, classical dance, Western music, chess, and robotics.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+        <!-- SECTION 27: CONTACT & ALL CAMPUS LOCATIONS -->
+    <section id="contact" class="section-padding bg-pattern campus-contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get in Touch</span>
+                <h2 class="section-title">Our Campuses & Contact Details</h2>
+                <p class="section-subtitle">Find the nearest Everwin campus, contact the school team, and explore the location on the map.</p>
+            </div>
+            <div class="campus-contact-grid">
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">01</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Kolathur</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>M9, Meenakshi Nagar, Balakumaran Nagar, Kolathur, Chennai, Tamil Nadu - 600099</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:cbse@everwinschool.net">cbse@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">2556 4400 / 2556 6666</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Kolathur" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.272930282752!2d80.2200133!3d13.1265165!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x32648c612374c3b8!2sEverwin%20Vidhyashram!5e0!3m2!1sen!2sin!4v1640972782626!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=M9, Meenakshi Nagar, Balakumaran Nagar, Kolathur, Chennai, Tamil Nadu - 600099" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">02</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Matriculation, Kolathur</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>No.12/3 Red Hills Road, S J Avenue, 4th St, Thirupathi Nagar, Kolathur, Chennai, Tamil Nadu - 600099</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:admin@everwinschool.net">admin@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">2556 1100 / 2556 8800</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Matriculation, Kolathur" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15542.25438300206!2d80.2204557!3d13.1268097!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x825fa0e80f54a352!2sEverwin%20Matriculation%20Higher%20Secondary%20School!5e0!3m2!1sen!2sin!4v1640972826148!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=No.12/3 Red Hills Road, S J Avenue, 4th St, Thirupathi Nagar, Kolathur, Chennai, Tamil Nadu - 600099" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">03</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Public School, Maduravoyal</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>2nd Main Road, Mettukuppam Main Road, Ayyavu Nagar Extension, Chinna Mettukuppam, Maduravoyal, Chennai, Tamil Nadu 600095</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:eps@everwinschool.net">eps@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">2378 1107 / 9884 777 000</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Public School, Maduravoyal" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15546.525619063346!2d80.1724646!3d13.0591182!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41bcedc817110ae!2sEverwin%20Public%20School!5e0!3m2!1sen!2sin!4v1640972562218!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=2nd Main Road, Mettukuppam Main Road, Ayyavu Nagar Extension, Chinna Mettukuppam, Maduravoyal, Chennai, Tamil Nadu 600095" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">04</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Mathur</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>2nd Main Road, TNHB Layout, Mathur, Chennai, Tamil Nadu 600068</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:evmathur@everwinschool.net">evmathur@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">2555 2266 / 8940 777 000</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Mathur" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15539.607957800734!2d80.2475624!3d13.1685793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa93c930124f45c98!2sEverwin%20Vidhyashram!5e0!3m2!1sen!2sin!4v1640972713699!5m2!1sen!2sin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=2nd Main Road, TNHB Layout, Mathur, Chennai, Tamil Nadu 600068" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">05</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Perambur</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>32/134, Perambur High Road, Perambur, Chennai, Tamil Nadu 600012</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:perambur@everwinschool.net">perambur@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:+++">+91 44 2662 1100 / +91 9444 121 212 / +91 9445 959 595</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Perambur" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.874677407256!2d80.24499462165576!3d13.10712479183826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265bf080e18cb%3A0xf1a22c6a999183d6!2sEverwin+Vidhyashram!5e0!3m2!1sen!2sin!4v1540969352144" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=32/134, Perambur High Road, Perambur, Chennai, Tamil Nadu 600012" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">06</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Surapet</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>Door no.190, 40Feet Road, Arul Nagar, Sivaprakasam Nagar, Surapet, Chennai - 600066</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:everwinsurapet@everwinschool.net">everwinsurapet@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">9445 999 555 / 6384 380 077</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Surapet" src="https://www.google.com/maps?q=Everwin+Vidhyashram+Surapet+Chennai+600066&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=Door no.190, 40Feet Road, Arul Nagar, Sivaprakasam Nagar, Surapet, Chennai - 600066" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">07</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Janakipuram (Madurantakam)</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>No.30, GST Road, Janakipuram, Madurantakam, Taluk, Chengalpet district - 603303</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:janakipuram@everwinschool.net">janakipuram@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">8531 888 000 / 8531 999 444</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Janakipuram (Madurantakam)" src="https://www.google.com/maps?q=Everwin+Vidhyashram+Janakipuram+Madurantakam+603303&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=No.30, GST Road, Janakipuram, Madurantakam, Taluk, Chengalpet district - 603303" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">08</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Global Kids, Rajamangalam (Kolathur)</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>46G, 109 Feet Road, Selvi Nagar, Kolathur, Chennai - 600099</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:globalkids@everwinschool.net">globalkids@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">7094 533 533 / 7094 811 811</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Global Kids, Rajamangalam (Kolathur)" src="https://www.google.com/maps?q=Everwin+Global+Kids+Rajamangalam+Kolathur+Chennai+600099&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=46G, 109 Feet Road, Selvi Nagar, Kolathur, Chennai - 600099" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">09</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Paruthipattu</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>No.3, Poonamalle - Avadi High Road, Paruthipattu, Chennai - 600071</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span><a href="mailto:paruthipattu@everwinschool.net">paruthipattu@everwinschool.net</a></span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">8428 776 677 / 8428 667 766</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Paruthipattu" src="https://www.google.com/maps?q=Everwin+Vidhyashram+Paruthipattu+Chennai+600071&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=No.3, Poonamalle - Avadi High Road, Paruthipattu, Chennai - 600071" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+
+                <article class="campus-contact-card">
+                    <div class="campus-card-top">
+                        <span class="campus-number">10</span>
+                        <span class="campus-hours"><i class="fa-regular fa-clock"></i> Mon-Sat (9.30 AM-4.30 PM)</span>
+                    </div>
+                    <h3>Everwin Vidhyashram, Sembium</h3>
+                    <div class="campus-detail"><i class="fa-solid fa-location-dot"></i><span>No.3, Sembium Perambur, Chennai - 600011</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-envelope"></i><span>Email not provided</span></div>
+                    <div class="campus-detail"><i class="fa-solid fa-phone"></i><span><a href="tel:">90927 76600</a></span></div>
+                    <div class="campus-map-wrap">
+                        <iframe title="Map: Everwin Vidhyashram, Sembium" src="https://www.google.com/maps?q=Everwin+Vidhyashram+Sembium+Perambur+Chennai+600011&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
+                    <a class="campus-directions" href="https://www.google.com/maps/search/?api=1&query=No.3, Sembium Perambur, Chennai - 600011" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 28: GRAND PREMIUM FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <h2>EVERWIN GROUP OF SCHOOLS</h2>
+                    </div>
+                    <p style="margin-bottom: 1.5rem;">A benchmark educational group in Tamil Nadu dedicated to academic excellence, innovative technological education, and student leadership.</p>
+                    <div style="display: flex; gap: 0.75rem;">
+                        <a href="https://www.facebook.com/everwinworld/" style="width: 38px; height: 38px; background: rgba(255,255,255,0.1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@EverwinGroup" style="width: 38px; height: 38px; background: rgba(255,255,255,0.1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://x.com/everwinalert" style="width: 38px; height: 38px; background: rgba(255,255,255,0.1); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Everwin</a></li>
+                        <li><a href="#founder">Founder's Message</a></li>
+                        <li><a href="#academics">CBSE & State Curricula</a></li>
+                        <li><a href="#admissions">Online Admissions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Campuses</h3>
+                    <ul class="footer-links">
+                        <li><a href="#campuses">Kolathur (Mat & CBSE)</a></li>
+                        <li><a href="#campuses">Maduravoyal CBSE</a></li>
+                        <li><a href="#campuses">Mathur CBSE</a></li>
+                        <li><a href="#campuses">Perambur CBSE</a></li>
+                        <li><a href="#campuses">Surapet CBSE</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p style="font-size: 0.88rem; margin-bottom: 1rem;">Subscribe to receive school notifications, news, and event updates.</p>
+                    <form action="#" method="get" style="display: flex; gap: 0.5rem;">
+                        <input type="email" placeholder="Your email address" class="form-control" style="font-size: 0.85rem; padding: 0.5rem 0.8rem;" required>
+                        <button type="submit" class="btn btn-gold" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Join</button>
+                    </form>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 2rem; text-align: center; font-size: 0.85rem; color: #64748b;">
+                <p>&copy; 2026 Everwin Group of Schools. All Rights Reserved. Built with Pure HTML5 & CSS3.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- PURE CSS MODAL 1: ADMISSION ENQUIRY POP-UP -->
+    <div id="admission-modal" class="modal-overlay">
+        <div class="modal-box">
+            <label for="admission-modal-toggle" class="modal-close">&times;</label>
+            <span class="section-badge gold">Admissions 2026-27</span>
+            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Admission Enquiry Form</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Get in touch with our counselors for immediate seat availability details.</p>
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label class="form-label">Student Name</label>
+                    <input type="text" class="form-control" placeholder="Full name of student" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Parent / Guardian Contact Phone</label>
+                    <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Campus Choice</label>
+                    <select class="form-control" required>
+                        <option value="">Select Campus</option>
+                        <option>Kolathur - CBSE</option>
+                        <option>Kolathur - Matriculation</option>
+                        <option>Maduravoyal - CBSE</option>
+                        <option>Mathur - CBSE</option>
+                        <option>Perambur - CBSE</option>
+                        <option>Surapet - CBSE</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Application Request</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 2: WELCOME BANNER POP-UP -->
+    <div id="welcome-modal" class="modal-overlay">
+        <div class="modal-box" style="text-align: center; max-width: 480px;">
+            <label for="welcome-modal-toggle" class="modal-close">&times;</label>
+            <div style="width: 60px; height: 60px; background: rgba(217, 119, 6, 0.15); color: var(--gold-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1rem auto;">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;">Welcome to Everwin</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Admissions for the Academic Year 2026-27 are now open across all campuses for CBSE and State Board curricula.</p>
+            <div style="display: flex; gap: 0.75rem; justify-content: center;">
+                <label for="welcome-modal-toggle" class="btn btn-gold" style="cursor: pointer; width: 100%;">Explore Website</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- PURE CSS MODAL 3: LIGHTBOX PREVIEW -->
+    <div id="lightbox-1" class="modal-overlay">
+        <div class="modal-box" style="max-width: 800px; padding: 1rem; background: var(--navy-dark); color: white;">
+            <label for="lightbox-1-toggle" class="modal-close" style="background: rgba(255,255,255,0.2); color: white;">&times;</label>
+            <img loading="lazy" decoding="async" src="images/10_General/sembium_photo_pending.svg" alt="Selected gallery image preview" style="border-radius: var(--radius-sm); max-height: 70vh; width: 100%; object-fit: contain;">
+            <div style="padding: 1rem 0.5rem;">
+                <h4>Interactive Smart Classroom Learning</h4>
+                <p style="font-size: 0.85rem; color: #94a3b8;">Everwin Group of Schools - Smart Class Initiative</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
